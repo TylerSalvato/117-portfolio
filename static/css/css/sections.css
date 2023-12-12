@@ -1,0 +1,105 @@
+.about-section {
+    display: flex;
+    padding: 2rem;
+}
+
+.img-container {
+    width: 40%;
+}
+
+#about-img {
+    width: 60%;
+}
+
+.description-container {
+    width: 60%;
+    flex-direction: column;
+}
+
+.description-container p {
+    width: 80%;
+    margin: 2rem 0px;
+}
+
+.skills-list {
+    flex-direction: column;
+}
+
+.skills label, .technologies label {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    cursor: initial;
+}
+
+.skills {
+    width: 70%;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+/*---- Projects Section ----*/
+
+.project-card img {
+    width: 100%;
+    border-radius: 1%;
+}
+
+.project-card {
+    width: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    border: 1px solid var(--secondary-color-900);
+    border-radius: 1%;
+}
+
+.project-card:hover {
+    opacity: 0.5;
+    border: 1px solid var(--secondary-color);
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.projects-section {
+    flex-direction: column;
+    padding: 2rem;
+    background-color: var(--secondary-color-900);
+}
+
+.technologies {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+a p:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+
+a p:nth-child(3) {
+    font-style: italic;
+}
+
+a p:nth-child(4) {
+    font-weight: bolder;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.2rem;
+    
+}
+

@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&family=Lobster&family=Merriweather:wght@300&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="{% static './css/css/base.css' %}" />
+    <css></css>
+    <link rel="stylesheet" href="{% static './css/css/header.css' %}" />
+    <link rel="stylesheet" href="{% static './css/css/sections.css' %}" />
+    <link rel="stylesheet" href="{% static './css/css/responsive.css' %}" />
+    
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    
+        <!--
+    <h1>Hello!</h1>
+    <h2>This is working</h2>
+    <p>My first version of the portfolio</p>
+    -->
+
+    <header class="center">
+        <!--Left Side-->
+
+        <div class="logo center">
+            <a href="">
+                <h2>Tyler</h2>
+            </a>
+        </div>
+
+        <!--Right Side-->
+
+        <nav>
+            <!--Hamburger Icon-->
+
+            <input type="checkbox" id="nav-check" />
+
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <!--Links or Options of the menu-->
+
+            <div class="nav-link center">
+                <a href="{% url 'about' %}">About Me</a>
+                <a href="{% url 'projects_list' %}">Projects</a>
+                <a href="{% url 'experience_list' %}">Experiences</a>
+                <a href="">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+</body>
+
+</html>
+    <h1>Here is the header</h1>
+
+    {% block content %}
+    
+    {% endblock content %}
+
+    <h2>Here is the footer</h2>
+    
+</body>
+</html>

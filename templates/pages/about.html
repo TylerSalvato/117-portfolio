@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}About me{% endblock %}
+{% load static %}
+
+{% block content %}
+
+<h1>This is my about page! and is working, mmhmm</h1>
+
+<section class="about-section">
+    <div class="img-container center">
+        <img id="about-img" src="{% static './img/img/tyler.png' %}" alt="logo" />
+    </div>
+
+    <div class="description-container center">
+        <div class="center" style="display: flex; flex-direction: column;">
+            <h1>Full Stack Developer</h1>
+            <h2>Tyler</h2>
+        </div>
+
+        <p>
+            <br />
+            As an entry-level Junior Software Engineer fresh from a rigorous coding bootcamp, I bring a robust skill set in web development. Proficient in HTML, CSS, and JavaScript, I've also mastered frameworks like React for dynamic and responsive front-end design. My backend expertise spans Python, Flask, and Django, enabling me to build powerful and efficient server-side applications.
+            <br />
+            <br />
+            Adept at utilizing tools like Figma for streamlined UI/UX design and versed in Agile methodologies, I thrive in collaborative environments, adapting swiftly to evolving project requirements. My proficiency in SQL and SQLite3 allows me to handle data management with precision. Eager to contribute innovative solutions and learn continuously, I am driven to leverage my technical acumen in creating impactful and user-centric software solutions.
+            <br />
+            <br />
+        </p>
+
+        <div class="skills-list center">
+
+            <h2>Skills</h2>
+
+            <div class="skills center">
+                <label> UI/UX </label>
+                <label> Communication </label>
+                <label> Collaboration </label>
+                <label> Adaptability </label>
+                <label> Growth Mindset </label>
+                <label> Networking </label>
+                <label> Security </label>
+                <label> Responsive Design </label>
+                <label> Agile </label>
+                <label> Figma </label>
+                <label> MongoDB </label>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock content %}
