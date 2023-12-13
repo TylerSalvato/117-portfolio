@@ -5,6 +5,31 @@
 
 {% block content %}
 
-<h2>My experience section here</h2>
+<section >
+
+    <h2>My experience section here</h2>
+
+    <div >
+
+        {% for experience in experiences %}
+
+        <div >
+            <p>{{ experience.entity }}</p>
+            <p>{{ experience.title }}</p>
+            <p> {{ experience.description }} </p>
+            <p> {{ experience.period }} </p>
+            <div class="technologies center">
+                {% for tech in experience.technologies.all %}
+                <label>{{ tech.name }}</label>
+                {% endfor %}
+
+
+            </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endfor %}
 
 {% endblock content %}

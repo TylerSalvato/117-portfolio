@@ -16,48 +16,26 @@
 
     <div class="projects-list">
 
+        {% for project in projects %}
+
         <div class="project-card">
-            <a href="https://github.com/TylerSalvato/loadingfocus">
-                <img src="{% static 'img/img/picture-1.jpg' %}" alt="picture1">
-                <p>Online Store</p>
-                <p>This is an online store that I created using React.</p>
-                <p> 2023 </p>
+            <a href=" {{ project.repository }} " target="_blank">
+                <img src="{{ project.img }}" alt="project image">
+                <p>{{ project.name }}</p>
+                <p>{{ project.description }}</p>
+                <p> {{ project.year }} </p>
                 <div class="technologies center">
-                    <label>React</label>
-                    <label>RESTful APIs</label>
-                    <label>Debugging</label>
-                    <label>Testing</label>
+                    {% for tech in project.technologies.all %}
+                    <label>{{ tech.name }}</label>
+                    {% endfor %}
+
+
                 </div>
             </a>
         </div>
-        <div class="project-card">
-            <a href="https://github.com/TylerSalvato/blog">
-                <img src="{% static 'img/img/picture-2.jpg' %}" alt="picture2">
-                <p>Blog Page</p>
-                <p>This is a blog page that I created using Django.</p>
-                <p> 2023 </p>
-                <div class="technologies center">
-                    <label>Python</label>
-                    <label>Django</label>
-                    <label>Flask</label>
-                    <label>SQLite3</label>
-                </div>
-            </a>
-        </div>
-        <div class="project-card">
-            <a href="https://github.com/TylerSalvato/FSDI-104">
-                <img src="{% static 'img/img/picture-3.jpg' %}" alt="picture3">
-                <p>Pet Salon</p>
-                <p>This is a pet salon that I created using HTML, CSS, and JavaScript.</p>
-                <p> 2023 </p>
-                <div class="technologies center">
-                    <label>HTML</label>
-                    <label>CSS</label>
-                    <label>JavaScript</label>
-                    <label>Git</label>
-                </div>
-            </a>
-        </div>
+
+        {% endfor %}
+
     </div>
 </section>
 </body>

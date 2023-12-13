@@ -53,3 +53,44 @@ Create the Experience section
 8. Include the urls of the experience app to the urls under config folder
 
 9. Run the server
+
+For Technologies Model, instead of using a select field from a list/array. I want to use a text field for individual technologies and add individual sections to be added to the array. Make a separate Model for Technologies to be added. 
+
+1928qpzm
+
+
+        <div class="project-card">
+            <a href="https://github.com/TylerSalvato/blog">
+                <img src="{% static 'img/img/picture-2.jpg' %}" alt="picture2">
+                <p>Blog Page</p>
+                <p>This is a blog page that I created using Django.</p>
+                <p> 2023 </p>
+                <div class="technologies center">
+                    <label>Python</label>
+                    <label>Django</label>
+                    <label>Flask</label>
+                    <label>SQLite3</label>
+                </div>
+            </a>
+        </div>
+        <div class="project-card">
+            <a href="https://github.com/TylerSalvato/FSDI-104">
+                <img src="{% static 'img/img/picture-3.jpg' %}" alt="picture3">
+                <p>Pet Salon</p>
+                <p>This is a pet salon that I created using HTML, CSS, and JavaScript.</p>
+                <p> 2023 </p>
+                <div class="technologies center">
+                    <label>HTML</label>
+                    <label>CSS</label>
+                    <label>JavaScript</label>
+                    <label>Git</label>
+                </div>
+            </a>
+        </div>
+
+                            <label>React</label>
+                    <label>RESTful APIs</label>
+                    <label>Debugging</label>
+                    <label>Testing</label>
+
+                    
