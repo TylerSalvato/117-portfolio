@@ -39,8 +39,13 @@ html {
     font-family: var(--sans-font);
     margin: 0px;
     padding: 0px;
+}
 
-
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /*Text Style*/

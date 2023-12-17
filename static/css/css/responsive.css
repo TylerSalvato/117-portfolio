@@ -55,6 +55,17 @@ _ Medium: (641px and 1007px):
 
 }
 
+/*--- Footer ---*/
+footer {
+    flex-direction: column;
+}
+
+footer nav {
+    height: fit-content;
+}
+
+/*Tablet View*/
+
 @media((max-width:1007px)){
     html {
         font-size: 12px;
@@ -97,3 +108,4 @@ _ Medium: (641px and 1007px):
     }
 
 }
+

@@ -10,8 +10,8 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&family=Lobster&family=Merriweather:wght@300&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="{% static './css/css/base.css' %}" />
-    <css></css>
     <link rel="stylesheet" href="{% static './css/css/header.css' %}" />
+    <link rel="stylesheet" href="{% static './css/css/footer.css' %}" />
     <link rel="stylesheet" href="{% static './css/css/sections.css' %}" />
     <link rel="stylesheet" href="{% static './css/css/responsive.css' %}" />
     
@@ -29,7 +29,7 @@
         <!--Left Side-->
 
         <div class="logo center">
-            <a href="">
+            <a href="{% url 'about' %}">
                 <h2>Tyler</h2>
             </a>
         </div>
@@ -63,13 +63,29 @@
 </body>
 
 </html>
-    <h1>Here is the header</h1>
+
 
     {% block content %}
     
     {% endblock content %}
 
-    <h2>Here is the footer</h2>
+    <footer>
+        <a href="{% url 'about' %}">
+            <h2>Tyler</h2>
+        </a>
+
+        <nav class="nav-footer center">
+            <a href="{% url 'about' %}">About Me</a>
+            <a href="{% url 'projects_list' %}">Projects</a>
+            <a href="{% url 'experience_list' %}">Experiences</a>
+            <a href="">Contact</a>
+
+        </nav>
+
+
+    </footer>
+
+
     
 </body>
 </html>
