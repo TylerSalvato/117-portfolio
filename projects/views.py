@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Project
 from .forms import ProjectForm
 
@@ -13,7 +13,15 @@ def projects_list(request):
     })
 
 def project_new(request):
-    form = ProjectForm()
+
+    if request.method == 'POST':
+        #Save the data
+        form = ProjectForm(request.POST, request.FILES)
+        if form.is_valid():
+            project = form.save()
+            return redirect('projects_list')
+    else:
+        form = ProjectForm()
 
     return render(request, 'projects/new.html', {
         'form': form

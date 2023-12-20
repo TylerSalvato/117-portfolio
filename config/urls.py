@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from pages.views import about
+from pages.views import about, contact
 
 
 urlpatterns = [
@@ -24,4 +24,5 @@ urlpatterns = [
     path('', about, name="about"),
     path('projects/', include('projects.urls')),
     path('experience/', include('experience.urls')),
+    path("contact/", contact, name='contact'),
 ]
